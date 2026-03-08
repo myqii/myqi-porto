@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Rizqih Ramadhan | Portfolio </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <nav class="fixed top-0 w-full z-40 p-6 flex justify-between items-center glass-panel border-none bg-transparent">
+        <div class="font-game font-bold text-2xl tracking-widest">RP</div>
+        <div class="hidden md:flex gap-8 font-game text-xs tracking-widest uppercase">
+            <a href="#home" class="hover:text-blue-400 transition">Profil</a>
+            <a href="#profile" class="hover:text-blue-400 transition">About</a> 
+            <a href="#skills" class="hover:text-blue-400 transition">Skills</a>         
+            <a href="#sertifikat" class="hover:text-blue-400 transition">Certicate</a>
+            <a href="#projects" class="hover:text-blue-400 transition">Project</a>
+            <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center relative hero-gradient px-6 pt-20">
+        <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative order-2 md:order-1">
+                <div class="absolute -inset-4 bg-red-900/20 rounded-full blur-3xl"></div>
+                <div class="relative w-64 h-64 md:w-96 md:h-96 mx-auto">
+                    <div class="absolute inset-0 border-2 border-blue-500/30 rounded-full animate-pulse"></div>
+                    <img src="img/ft.jpeg" alt="Yudha" class="rounded-full w-full h-full object-cover border-4 border-slate-900 shadow-2xl">
+                    <div class="absolute -left-12 top-1/2 -translate-y-1/2 w-40 h-80 bg-red-900/40 -z-10 rounded-full blur-xl hidden md:block"></div>
+                </div>
+            </div>
+
+            <div class="order-1 md:order-2 space-y-6">
+                <h1 class="font-game text-5xl md:text-8xl leading-tight tracking-tighter">
+                    PORTFOLIO <br> 
+                </h1>
+                <div class="flex items-center gap-4 text-slate-400 tracking-[0.4em] text-xs uppercase">
+                    <span class="w-10 h-[1px] bg-slate-500"></span> 
+                    UI/FRONT-END DEVELOPER
+                </div>
+                
+                <div class="pt-10 space-y-4 font-game text-xl tracking-widest">
+                    <a href="#profile" class="menu-item block transition-all duration-300">START</a>
+                    <a href="#projects" class="menu-item block transition-all duration-300">OPTIONS</a>
+                    <a href="#contact" class="menu-item block transition-all duration-300">EXIT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile" class="py-24 px-6 bg-slate-950/50">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20">
+            <div class="space-y-12">
+                <div class="relative inline-block">
+                    <h2 class="font-game text-blue-500 text-sm tracking-widest mb-4">// ABOUT ME</h2>
+                    <p class="text-slate-300 leading-relaxed text-lg">
+                        Kenalin, Saya <span class="text-white font-bold">Muhammad Rizqih Ramadhan</span>. Aku percaya kalau website yang bagus itu nggak cuma soal kode yang bersih, tapi juga seberapa nyaman user saat memakainya. Berbekal ilmu dari SMK Taruna Bhakti dan pengalaman magang sebagai developer, aku terbiasa 'meracik' UI yang responsif dan estetis pakai ekosistem Figma, HTML, CSS, dan Bootstrap. <br> <br> Aku memadukan logika programming dengan insting pelayanan pelanggan yang kuat berkat pengalamanku di dunia retail. Jadi, aku paham betul pentingnya teamwork dan empati terhadap end-user. Saat ini aku lagi memperluas tech stack-ku ke ranah Laravel dan Python. Let's build something awesome together!"
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <h2 class="font-game text-blue-500 text-sm tracking-widest">// SOFT SKILLS</h2>
+                    <div class="flex flex-wrap gap-4">
+                        <p class="text-xs text-slate-500">Teamwork</p>
+                        <p class="text-xs text-slate-500">Adaptability</p> 
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <p class="text-xs text-slate-500">Problem Solving</p>
+                        <p class="text-xs text-slate-500">Design Thinking</p> 
+                        <p class="text-xs text-slate-500">Effective Communication</p> 
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8 pt-8 border-t border-slate-800">
+                    <div>
+                        <h4 class="text-[10px] font-game text-slate-500 mb-2 uppercase">Education</h4>
+                        <p class="text-sm font-semibold">SMK TARUNA BHAKTI</p>
+                        <p class="text-xs text-slate-500">PENGEMBANGAN PERANGKAT LUNAK DAN GIM  | 2021 - 2024 </p>
+                    </div>
+                    <div>
+                        <h4 class="text-[10px] font-game text-slate-500 mb-2 uppercase">Experience</h4>
+                        <p class="text-sm font-semibold">PT.DELTA DIGITAL TECHNOLOGI</p>
+                        <p class="text-xs text-slate-500">UI FRONTEND</p>
+                        <p class="text-sm font-semibold">PT.ALBANY CORONA LESTARI (INDOMARET)</p>
+                        <p class="text-xs text-slate-500">STORE CREW </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center items-center">
+                <div class="w-full aspect-[3/4] rounded-2xl overflow-hidden border border-slate-700 shadow-2xl transform rotate-2">
+                    <img src="img/foto(1)(1)(1).jpeg" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+                </div>
+                <div class="absolute -bottom-6 -left-6 glass-panel p-6 rounded-xl shadow-2xl">
+                    <h4 class="text-[10px] font-game mb-3">LANGUAGE COMMUNICATION</h4>
+                    <div class="space-y-3">
+                        <div class="w-32 h-1 bg-slate-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-blue-500 w-[95%]"></div>
+                        </div>
+                        <div class="flex justify-between text-[10px]"><span>INDONESIA</span><span>95%</span></div>
+                        <div class="w-32 h-1 bg-slate-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-blue-500 w-[10%]"></div>
+                        </div>
+                        <div class="flex justify-between text-[10px]"><span>ENGLISH</span><span>10%</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="font-skil text-3xl mb-2">SOFTWARE SKILLS</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h4>HTML5</h4>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h4>CSS3</h4>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-python"></i>
+                <h4>Python</h4>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-laravel"></i>
+                <h4>Laravel</h4>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-bootstrap"></i>
+                <h4>Bootstrap</h4>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <h4>Git</h4>
+            </div>
+        </div>
+    </section>
+
+ <section id="sertifikat" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="font-game text-3xl mb-12 text-center md:text-left"> CERTIVICATE/COMPETENSI </h2>
+        
+        <div class="sertif-grid">
+            <div class="sertif-card">
+                <div class="sertif-img">
+                    <img src="img/serhtml.jpg" alt="Sertifikat Frontend">
+
+                </div>
+                <div class="sertif-info">
+                    <h3>INTRODUCTION TO HTML</h3>
+                    <p>Sertifikat Introduction to HTML menunjukkan pemahaman dasar tentang HTML untuk membuat struktur halaman web, seperti penggunaan tag, teks, gambar, link, dan elemen dasar lainnya..</p>
+                    <div class="sertif-links">
+                        <a href="img/serhtml.jpg"><i class="fas fa-award"></i> Verifikasi</a>
+                        <a href="img/serhtml.jpg"><i class="fas fa-external-link-alt"></i> Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sertif-card">
+                <div class="sertif-img">
+                    <img src="img/serdac.jpg" alt="Sertifikat UI/UX">
+
+                </div>
+                <div class="sertif-info">
+                    <h3>PUSAT PENDIDIKAN WEBINAR DAC</h3>
+                    <p>Sertifikat dari Pusat Pendidikan Webinar DAC yang menunjukkan partisipasi dan pemahaman dalam kegiatan pembelajaran atau pelatihan yang diselenggarakan secara online.</p>
+                    <div class="sertif-links">
+                        <a href="img/serdac.jpg"><i class="fas fa-award"></i> Verifikasi</a>
+                        <a href="img/serdac.jpg"><i class="fas fa-external-link-alt"></i> Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sertif-card">
+                <div class="sertif-img">
+                    <img src="img/sertifdel.jpg" alt="Sertifikat Content Creator">
+
+                </div>
+                <div class="sertif-info">
+                    <h3>PT. DELTA DIGITAL TECHNOLOGI</h3>
+                    <p>Sertifikat magang dari PT. Delta Digital Teknologi yang menunjukkan pengalaman mengikuti program magang serta memperoleh pengetahuan dan keterampilan dasar di bidang teknologi/digital..</p>
+                    <div class="sertif-links">
+                        <a href="img/sertifdel.jpg"><i class="fas fa-award"></i> Verifikasi</a>
+                        <a href="img/sertifdel.jpg"><i class="fas fa-external-link-alt"></i> Detail</a>
+                    </div>
+                </div>
+            </div>
+                        <div class="sertif-card">
+                <div class="sertif-img">
+                    <img src="img/serdat.jpg" alt="Sertifikat Content Creator">
+
+                </div>
+                <div class="sertif-info">
+                    <h3>DATABASES</h3>
+                    <p>Sertifikat Databases yang menunjukkan pemahaman dasar tentang pengelolaan basis data, termasuk penyimpanan, pengolahan, dan pengorganisasian data menggunakan sistem database.</p>
+                    <div class="sertif-links">
+                        <a href="img/serdat.jpg"><i class="fas fa-award"></i> Verifikasi</a>
+                        <a href="img/serdat.jpg"><i class="fas fa-external-link-alt"></i> Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sertif-card">
+                <div class="sertif-img">
+                    <img src="img/serent.jpg" alt="Sertifikat Content Creator">
+
+                </div>
+                <div class="sertif-info">
+                    <h3>ENTREPRENEUR</h3>
+                    <p>Sertifikat Entrepreneur yang menunjukkan pemahaman dasar tentang kewirausahaan, termasuk cara memulai usaha, mengelola bisnis, dan mengembangkan ide bisnis.</p>
+                    <div class="sertif-links">
+                        <a href="img/serent.jpg"><i class="fas fa-award"></i> Verifikasi</a>
+                        <a href="img/serent.jpg"><i class="fas fa-external-link-alt"></i> Detail</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section id="projects" class="py-24 px-6" style="position: relative; bottom: 115px;">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="font-game text-3xl mb-2">RECAP PROJECT </h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="md:col-span-1 glass-panel rounded-lg aspect-square overflow-hidden group">
+                    <img src="img/food.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="md:col-span-2 glass-panel rounded-lg aspect-video overflow-hidden group">
+                    <img src="img/galeri.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="md:col-span-1 glass-panel rounded-lg aspect-square overflow-hidden group">
+                    <img src="img/fashion.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="md:col-span-2 glass-panel rounded-lg aspect-[16/9] overflow-hidden group">
+                    <img src="img/outdor.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="md:col-span-1 glass-panel rounded-lg aspect-square overflow-hidden group">
+                    <img src="https://via.placeholder.com/400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="md:col-span-1 glass-panel rounded-lg aspect-square overflow-hidden group">
+                    <img src="https://via.placeholder.com/400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="min-h-screen flex flex-col items-center justify-center p-6 relative" >
+        <div class="text-center space-y-4 mb-16">
+            <h2 class="font-game text-6xl md:text-9xl text-slate-800/30 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 pointer-events-none uppercase">Thanks</h2>
+            <h3 class="font-game text-5xl md:text-7xl relative z-10">THANK YOU</h3>
+        </div>
+
+        <div class="glass-panel p-8 md:p-12 rounded-3xl w-full max-w-2xl flex flex-col md:flex-row items-center gap-10">
+            <div class="w-32 h-32 rounded-full overflow-hidden border-2 border-blue-500">
+                <img src="img/pp.jpeg" class="w-full h-full object-cover">
+            </div>
+            
+            <div class="space-y-6 flex-1">
+                <h4 class="font-game text-sm text-slate-400 tracking-widest uppercase mb-4">Contact Me</h4>
+                <div class="grid grid-cols-1 gap-4 font-game text-xs tracking-widest">
+                    <a href="https://www.instagram.com/myqi_porto?igsh=Y3RkNnoxMmxlbGlq" class="flex items-center gap-4 hover:text-pink-500 transition"><i data-lucide="instagram"></i> @myqi_porto</a>
+                    <a href="#" class="flex items-center gap-4 hover:text-red-500 transition"><i data-lucide="mail"></i>muhammadrizqih02@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/muhammad-rizqih-ramadhan-4406862ba?utm_source=share_via&utm_content=profile&utm_medium=member_ios" class="flex items-center gap-4 hover:text-blue-400 transition"><i data-lucide="linkedin"></i> Muhammad Rizqih Ramadhan</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20 flex gap-4 opacity-30 grayscale overflow-hidden w-full justify-center">
+            <div class="h-12 border-l border-slate-700"></div>
+            <div class="h-12 border-l border-slate-700"></div>
+            <div class="h-12 border-l border-slate-700"></div>
+        </div>
+    </section>
+
+    <script>
+        // Inisialisasi Ikon
+        lucide.createIcons();
+
+        // Smooth Scroll sederhana untuk menu START/EXIT
+        document.querySelectorAll('.menu-item').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if(href.startsWith('#')) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
