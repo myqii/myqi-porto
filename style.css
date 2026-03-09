@@ -4,6 +4,9 @@
             --accent-blue: #3b82f6;
             --accent-red: #991b1b;
             --card-bg: #1e293b;
+            --accent-color: #3b82f6;
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-dim: #94a3b8;
         }
         body {
             background-color: var(--bg-dark);
@@ -48,20 +51,27 @@
         .skill-badge:hover { filter: grayscale(0); transform: translateY(-5px); }
 
         /* --- SKILLS --- */
+        #skills {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
         .font-skil {
             font-family: 'Orbitron', sans-serif; 
             display: flex;
             flex-wrap: wrap;
-            position: relative;
-            bottom: 10px;
-            justify-content: center;}
+            justify-content: center;
+            margin-bottom: 40px;
+            font-size: 1.5rem;
+        }
+        
         .skills-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            position: relative;
-            top: 30px;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .skill-card {
@@ -72,6 +82,8 @@
             min-width: 120px;
             transition: 0.3s;
             border: 1px solid transparent;
+            flex: 1 1 calc(50% - 20px);
+            max-width: 200px;
         }
 
         .skill-card:hover {
@@ -85,9 +97,14 @@
             color: var(--accent-color);
         }
 
+        .skill-card h4 {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
     .sertif-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
@@ -179,5 +196,69 @@ border-color: var(--accent-color);
 .sertif-links a:hover {
     color: #fff;
     text-shadow: 0 0 5px var(--accent-blue);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #profile .max-w-6xl {
+        gap: 40px;
+    }
+    
+    #profile .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    #profile .aspect-\[3\/4\] {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    #profile .absolute.\-bottom-6.\-left-6 {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 20px;
+    }
+    
+    .skill-card {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+    
+    #projects .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    #projects .grid > div {
+        aspect-ratio: 4/3;
+    }
+    
+    #contact .text-5xl,
+    #contact .text-7xl {
+        font-size: 2.5rem;
+    }
+    
+    #contact .text-9xl {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-card {
+        flex: 1 1 calc(50% - 20px);
+        min-width: 100px;
+        padding: 15px;
+    }
+    
+    .skill-card i {
+        font-size: 2rem;
+    }
+    
+    .skill-card h4 {
+        font-size: 0.75rem;
+    }
+    
+    .sertif-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
